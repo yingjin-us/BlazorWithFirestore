@@ -16,7 +16,7 @@ namespace BlazorWithFirestore.Server.DataAccess
         {
             string filepath = "C:\\Users\\yjin\\Downloads\\blazorwithfirestore-8cda6-370b9136eea9.json";
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", filepath);
-            projectId = "blazorwithfirestore";
+            projectId = "blazorwithfirestore-8cda6";
             fireStoreDb = FirestoreDb.Create(projectId);
         }
         public async Task<List<Employee>> GetAllEmployees()
